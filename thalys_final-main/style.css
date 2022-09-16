@@ -1,0 +1,520 @@
+@font-face {
+  font-family: 'mirtha_displaybold';
+  src: url("typos/mirtha-display-bold-webfont.woff2") format("woff2"), url("typos/mirtha-display-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mirtha_displaybold_italic';
+  src: url("typos/mirtha-display-bold-italic-webfont.woff2") format("woff2"), url("typos/mirtha-display-bold-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+label,
+.questionnaire,
+input,
+h1,
+.choix,
+.expplications {
+  margin-left: 5%;
+}
+
+.entree_l1 {
+  width: 93%;
+  margin-left: 0%;
+  margin-right: 7.3%;
+  display: inline-block;
+  border-radius: 3px;
+  border: black solid 1px;
+  height: 37px;
+  padding-left: 5%;
+}
+
+.entree_l2-3 {
+  width: 84%;
+  margin-left: 5%;
+  border-radius: 3px;
+  border: black solid 1px;
+  height: 37px;
+  padding-left: 2%;
+}
+
+input[type=number] {
+  margin-left: 0%;
+  padding-left: 3%;
+}
+
+input[type=radio].radio_button {
+  display: none;
+}
+
+label input[type=radio]:checked ~ .choix {
+  background-color: #c02634;
+  color: white;
+}
+
+label:hover input[type=radio] ~ .choix {
+  background-color: #ffa3ab;
+}
+
+.centre {
+  margin-top: 13px;
+  margin-bottom: 10px;
+  font-size: 79%;
+}
+
+.choix {
+  border: black 1px solid;
+  border-radius: 3px;
+  width: 166px;
+  height: 36px;
+  text-align: center;
+  margin-left: -27px;
+  margin-right: 5px;
+  margin-top: -2%;
+  margin-bottom: -2%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nb_participants {
+  height: 32px;
+  width: 265px;
+  margin-top: -2%;
+  margin-bottom: 2%;
+  border-radius: 3px;
+  border: black solid 1px;
+}
+
+.cadre_nom {
+  display: inline-block;
+  width: 40%;
+  margin-right: 0%;
+  margin-left: 5%;
+}
+
+.cadre_prenom {
+  display: inline-block;
+  width: 40%;
+  margin-left: 6%;
+}
+
+.textAlert {
+  border: #c02634 1px solid;
+  color: #c02634;
+  background-color: #b4b4b4;
+  width: 45%;
+  font-size: 14px;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+  border-radius: 20px;
+  display: none;
+}
+
+.textAlert2 {
+  border: #c02634 1px solid;
+  color: #c02634;
+  background-color: #b4b4b4;
+  width: 45%;
+  font-size: 14px;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+  border-radius: 20px;
+  display: none;
+}
+
+.valider {
+  background-color: #c02634;
+  color: white;
+  width: 225px;
+  height: 37px;
+  border: none;
+  border-radius: 4px;
+  margin: auto;
+  display: block;
+  padding: 0px;
+  font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 3%;
+
+}
+
+.alert {
+  margin: 4px;
+}
+
+.retour {
+  margin: auto;
+  padding: 2%;
+  border: none;
+  width: 225px;
+  display: block;
+  font-weight: bold;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #c02634;
+  color: white;
+  width: auto;
+  margin-bottom: 6%;
+  margin-top: 0%;
+}
+
+.enregistrer {
+  background-color: #c02634;
+  color: white;
+  width: 250px;
+  height: 37px;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: bold;
+  display: block;
+}
+
+.btn_connexion {
+  background-color: #c02634;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 37px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  display: block;
+  margin-bottom: 1%;
+  border-radius: 4px;
+}
+
+.identification {
+  display: inline-block;
+  margin-left: 9%;
+  margin-right: 3%;
+  margin-top: 0%;
+  margin-bottom: 3%;
+}
+
+.conteneur {
+  width: 590px;
+  max-width: 90%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-image: url("img/festival.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 171px;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 7%;
+}
+
+.questionnaire {
+  border: none;
+  text-align: justify;
+  padding: 0px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#page1 {
+  display: block;
+}
+
+#les_ardentes_img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo_ardentes {
+  margin-top: 30px;
+  width: 277px;
+  height: 76px;
+}
+
+.conteneur_logo {
+  width: 37.8%;
+  margin-right: auto;
+  margin-left: 52%;
+}
+
+.bloc_thalys {
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+.log_thalys {
+  display: none;
+}
+
+#page2 {
+  padding-top: 1%;
+}
+
+.enc {
+  background-color: #b4b4b4;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 2%;
+}
+
+.ident {
+  padding: 0%;
+  margin-left: 10%;
+  margin-top: -20px;
+}
+
+.connect {
+  margin: 0px;
+  padding: 0%;
+}
+
+.valid_part {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+}
+
+.infos {
+  font-size: 14px;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.aster {
+  color: #c02634;
+}
+
+.question1 {
+  font-size: 14px;
+  margin-top: 18px;
+}
+
+.question2 {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.question3 {
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.reglement {
+  margin-right: 33%;
+  margin-left: 43%;
+  margin-top: 21px;
+  margin-bottom: 1px;
+  font-size: 63%;
+  color: #c02634;
+  font-weight: bold;
+  display: block;
+}
+
+.mensions_legales {
+  margin-left: 4%;
+  margin-right: 5%;
+  text-align: justify;
+  color: #b4b4b4;
+  font-size: 56%;
+}
+
+.cliquez {
+  color: #b4b4b4;
+}
+
+.explications2 {
+  margin-left: 5%;
+  font-weight: bold;
+}
+
+.description {
+  font-family: 'mirtha_displaybold';
+  border: black solid 2px;
+  background-color: #ff6200;
+  width: 100%;
+  margin: auto;
+  bottom: 10px;
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+  top: -40px;
+  left: -5px;
+}
+
+.texte_groupe {
+  margin-top: 2%;
+  margin-bottom: 1.5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  font-size: 105%;
+}
+
+.places {
+  border: black solid 1px;
+  background-color: #fee600;
+  width: 57%;
+  top: -80px;
+  left: 65px;
+  position: relative;
+  font-family: 'mirtha_displaybold_italic';
+  font-size: 287.5%;
+}
+
+.accroche {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-left: 8.5%;
+  margin-right: 6%;
+}
+
+.explications {
+  margin-left: 0%;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: -17px;
+}
+
+.mes_informations {
+  border: black solid 1px;
+  background-color: #fee600;
+  width: 58%;
+  top: 120px;
+  left: 150px;
+  
+  position: relative;
+  font-family: 'mirtha_displaybold_italic';
+  font-size: 287.5%;
+  display: none;
+ 
+}
+
+.renseignements {
+  font-weight: bold;
+  margin: 4%;
+  font-size: 125%;
+}
+
+@media (max-width: 668px) {
+  input[type=number] {
+    width: 60%;
+  }
+  .nom_prenom {
+    margin-left: 0%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .choix {
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    margin-bottom: 3%;
+  }
+  .reglement {
+    text-align: center;
+  }
+  .question2 {
+    margin-top: -11px;
+  }
+  .cadre_nom {
+    width: 100%;
+  }
+  .cadre_prenom {
+    width: 100%;
+    margin-left: 5%;
+  }
+  .entree_l1 {
+    width: 86%;
+    padding-left: 2%;
+  }
+  .entree_l2-3 {
+    width: 86%;
+  }
+  .reglement {
+    margin-left: 36%;
+  }
+  .conteneur_logo {
+    margin-left: 18%;
+    margin-right: auto;
+  }
+  .valider {
+    margin-top: 0%;
+  }
+  .identification {
+    width: 100%;
+  }
+  .renseignements {
+    font-size: 89%;
+  }
+  .mes_informations{
+
+    width: 74%;
+    left: 13%;
+  }
+}
+
+#liste {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 1px solid black;
+  background-color: white;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  padding: 5px;
+  border: 1px solid black;
+  background-color: #c02634;
+  color: white;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table tr:nth-child(2n) {
+  background-color: #b4b4b4;
+}
+
+#page1 {
+  display: block;
+}
+
+#page2 {
+  display: none;
+  margin-top: 100px;
+}
